@@ -5,13 +5,15 @@ Your goals are to:
 
 To setup the project, perform the following actions from a Ruby 2.x environment:
 ---
-`gem install bundler
+```
+gem install bundler
 cat >Gemfile <<END
 source "https://rubygems.org"
 gem 'rspec', '~> 3.0'
 END
 bundle install
-rspec --init`
+rspec --init
+```
 ---
 
 Then put the "delivery_router_spec.rb" test suite file in the spec/ folder,
@@ -19,6 +21,7 @@ and create a lib/delivery_router.rb file which should hold the DeliveryRouter cl
 
 Your project tree should look like this:
 .
+```
 ├── Gemfile
 ├── Gemfile.lock
 ├── lib
@@ -26,7 +29,7 @@ Your project tree should look like this:
 └── spec
   ├── delivery_router_spec.rb
   └── spec_helper.rb
-
+```
 To run the tests, just type "rspec" on the command line.
 Feel free to ask us any question!
 
